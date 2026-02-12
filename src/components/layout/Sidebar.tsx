@@ -61,8 +61,8 @@ function Sidebar() {
       {/* Logo/Title */}
       <div className="p-6 border-b border-slate-700/50">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
-            <Compass className="w-5 h-5 text-cyan-400" />
+          <div className="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
+            <Compass className="w-5 h-5 text-emerald-400" />
           </div>
           <div className="flex-1 min-w-0">
             <h2 className="text-xl font-bold font-display gradient-text">
@@ -71,7 +71,7 @@ function Sidebar() {
             <select
               value={selectedYear}
               onChange={(e) => setSelectedYear(Number(e.target.value))}
-              className="text-xs text-slate-400 bg-transparent border-none outline-none cursor-pointer hover:text-cyan-400 transition-colors appearance-none"
+              className="text-xs text-slate-400 bg-transparent border-none outline-none cursor-pointer hover:text-emerald-400 transition-colors appearance-none"
             >
               {getAvailableYears().map((year) => (
                 <option key={year} value={year} className="bg-slate-800 text-white">
@@ -95,7 +95,7 @@ function Sidebar() {
               onClick={() => setActiveSection(item.id)}
               className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors relative ${
                 isActive
-                  ? 'bg-cyan-500/20 text-cyan-400'
+                  ? 'bg-emerald-500/20 text-emerald-400'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/30'
               }`}
               whileTap={{ scale: 0.98 }}
@@ -103,7 +103,7 @@ function Sidebar() {
               {isActive && (
                 <motion.div
                   layoutId="activeNav"
-                  className="absolute left-0 top-0 bottom-0 w-1 bg-cyan-400 rounded-r"
+                  className="absolute left-0 top-0 bottom-0 w-1 bg-emerald-400 rounded-r"
                   transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                 />
               )}

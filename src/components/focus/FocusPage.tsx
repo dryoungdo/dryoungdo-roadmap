@@ -102,16 +102,16 @@ function priorityColor(priority: string): string {
 function promptColorClasses(color: string) {
   const map: Record<string, { bg: string; border: string; hover: string; text: string }> = {
     cyan: {
-      bg: 'bg-cyan-500/10',
-      border: 'border-cyan-500/30',
-      hover: 'hover:bg-cyan-500/20',
-      text: 'text-cyan-400',
+      bg: 'bg-emerald-500/10',
+      border: 'border-emerald-500/30',
+      hover: 'hover:bg-emerald-500/20',
+      text: 'text-emerald-400',
     },
     purple: {
-      bg: 'bg-purple-500/10',
-      border: 'border-purple-500/30',
-      hover: 'hover:bg-purple-500/20',
-      text: 'text-purple-400',
+      bg: 'bg-amber-500/10',
+      border: 'border-amber-500/30',
+      hover: 'hover:bg-amber-500/20',
+      text: 'text-amber-400',
     },
     emerald: {
       bg: 'bg-emerald-500/10',
@@ -319,7 +319,7 @@ export default function FocusPage() {
                 placeholder={'\u0E04\u0E49\u0E19\u0E2B\u0E32...'}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-cyan-500/50"
+                className="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-emerald-500/50"
                 autoFocus
               />
             </div>
@@ -345,7 +345,7 @@ export default function FocusPage() {
                             onClick={() => handleSelectItem(item.id)}
                             className={`w-full flex items-center gap-3 px-4 py-2.5 text-left text-sm transition-colors hover:bg-white/10 ${
                               item.id === focusedItemId
-                                ? 'bg-cyan-500/10 text-cyan-400'
+                                ? 'bg-emerald-500/10 text-emerald-400'
                                 : 'text-white/80'
                             }`}
                           >
@@ -409,7 +409,7 @@ export default function FocusPage() {
             </span>
           )}
           {ownerCfg && (
-            <span className="text-xs px-2.5 py-1 rounded-full bg-purple-500/20 text-purple-400 border border-purple-500/30">
+            <span className="text-xs px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30">
               {ownerCfg.label}
             </span>
           )}
@@ -430,7 +430,7 @@ export default function FocusPage() {
           </div>
           <div className="h-2 bg-white/10 rounded-full overflow-hidden">
             <div
-              className={`h-full rounded-full transition-all ${deptCfg?.bgClass ?? 'bg-cyan-500'}`}
+              className={`h-full rounded-full transition-all ${deptCfg?.bgClass ?? 'bg-emerald-500'}`}
               style={{ width: `${item.progress}%` }}
             />
           </div>
@@ -494,7 +494,7 @@ export default function FocusPage() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-sm text-emerald-400 hover:text-cyan-300 transition-colors"
                 >
                   <ExternalLink className="w-3.5 h-3.5" />
                   {link.title}
@@ -545,7 +545,7 @@ export default function FocusPage() {
     if (isLoading) {
       return (
         <div className="flex items-center justify-center gap-3 py-12">
-          <Loader2 className="w-6 h-6 text-cyan-400 animate-spin" />
+          <Loader2 className="w-6 h-6 text-emerald-400 animate-spin" />
           <span className="text-white/60 font-thai">
             {'\u0E01\u0E33\u0E25\u0E31\u0E07\u0E27\u0E34\u0E40\u0E04\u0E23\u0E32\u0E30\u0E2B\u0E4C...'}
           </span>
@@ -667,7 +667,7 @@ export default function FocusPage() {
     <div className="space-y-6">
       {/* Header */}
       <div className="flex items-center gap-3">
-        <Crosshair className="w-6 h-6 text-cyan-400" />
+        <Crosshair className="w-6 h-6 text-emerald-400" />
         <h2 className="text-xl font-semibold text-white">Focus View</h2>
       </div>
 

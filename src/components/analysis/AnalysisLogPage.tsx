@@ -33,7 +33,7 @@ interface TypeConfig {
 const TYPE_CONFIGS: TypeConfig[] = [
   { key: 'all',       label: 'ทั้งหมด',    icon: ScrollText,  color: '',                                        chipActive: 'bg-white/20 text-white border-white/40' },
   { key: 'strategic', label: 'Strategic',   icon: Sparkles,    color: 'text-purple-400 bg-purple-500/20',        chipActive: 'bg-purple-500/20 text-purple-400 border-purple-500/50' },
-  { key: 'roadmap',   label: 'Roadmap',     icon: MapIcon,     color: 'text-cyan-400 bg-cyan-500/20',            chipActive: 'bg-cyan-500/20 text-cyan-400 border-cyan-500/50' },
+  { key: 'roadmap',   label: 'Roadmap',     icon: MapIcon,     color: 'text-emerald-400 bg-emerald-500/20',            chipActive: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/50' },
   { key: 'milestone', label: 'Milestone',   icon: Flag,        color: 'text-purple-400 bg-purple-500/20',        chipActive: 'bg-purple-500/20 text-purple-400 border-purple-500/50' },
   { key: 'kpi',       label: 'KPI',         icon: BarChart3,   color: 'text-emerald-400 bg-emerald-500/20',      chipActive: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/50' },
   { key: 'process',   label: 'Process',     icon: Workflow,    color: 'text-amber-400 bg-amber-500/20',          chipActive: 'bg-amber-500/20 text-amber-400 border-amber-500/50' },
@@ -160,7 +160,7 @@ export default function AnalysisLogPage() {
       {/* Header */}
       <div>
         <div className="flex items-center gap-3 mb-1">
-          <ScrollText className="w-6 h-6 text-cyan-400" />
+          <ScrollText className="w-6 h-6 text-emerald-400" />
           <h2 className="text-2xl font-bold font-display">AI Analysis Log</h2>
         </div>
         <p className="text-white/60 text-sm font-thai">
@@ -176,7 +176,7 @@ export default function AnalysisLogPage() {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="ค้นหาบันทึก... (ชื่อรายการ, เนื้อหา, prompt)"
-          className="w-full pl-10 pr-10 py-2.5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 font-thai focus:outline-none focus:border-cyan-500/50 focus:bg-white/[0.07] transition-colors"
+          className="w-full pl-10 pr-10 py-2.5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-white/30 font-thai focus:outline-none focus:border-emerald-500/50 focus:bg-white/[0.07] transition-colors"
         />
         {searchQuery && (
           <button
@@ -303,7 +303,7 @@ export default function AnalysisLogPage() {
                                 e.stopPropagation();
                                 navigateToFocus(log.itemId!);
                               }}
-                              className="inline-flex items-center gap-1 text-xs text-cyan-400 hover:text-cyan-300 hover:underline cursor-pointer transition-colors"
+                              className="inline-flex items-center gap-1 text-xs text-emerald-400 hover:text-cyan-300 hover:underline cursor-pointer transition-colors"
                             >
                               <Crosshair className="w-3 h-3" />
                               {itemTitle}

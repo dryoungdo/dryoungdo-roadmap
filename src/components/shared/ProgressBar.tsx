@@ -6,7 +6,7 @@ interface ProgressBarProps {
   height?: string;
 }
 
-function ProgressBar({ progress, colorClass = 'bg-cyan-500', height = 'h-1.5' }: ProgressBarProps) {
+function ProgressBar({ progress, colorClass = 'bg-emerald-500', height = 'h-1.5' }: ProgressBarProps) {
   return (
     <div className={`w-full ${height} bg-slate-700/50 rounded-full overflow-hidden`}>
       <motion.div

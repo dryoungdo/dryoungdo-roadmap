@@ -34,7 +34,7 @@ export function LoginPage() {
         className="w-full max-w-md"
       >
         <div className="text-center mb-8">
-          <div className="w-20 h-20 rounded-2xl mx-auto mb-4 bg-cyan-500/20 flex items-center justify-center"><Target className="w-10 h-10 text-cyan-400" /></div>
+          <div className="w-20 h-20 rounded-2xl mx-auto mb-4 bg-emerald-500/20 flex items-center justify-center"><Target className="w-10 h-10 text-emerald-400" /></div>
           <h1 className="text-3xl font-bold gradient-text font-display">Dr.Do Roadmap</h1>
           <p className="text-white/60 mt-2 font-thai">Personal Goals & Roadmap</p>
         </div>
@@ -48,7 +48,7 @@ export function LoginPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai"
                 placeholder="your@email.com"
                 autoFocus
               />
@@ -61,7 +61,7 @@ export function LoginPage() {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
                 placeholder="Password"
               />
             </div>
@@ -79,7 +79,7 @@ export function LoginPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-3 bg-cyan-500 hover:bg-cyan-600 disabled:bg-cyan-500/50 text-white rounded-lg font-semibold font-thai transition-colors"
+              className="w-full py-3 bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-500/50 text-white rounded-lg font-semibold font-thai transition-colors"
             >
               {isSubmitting ? 'กำลังเข้าสู่ระบบ...' : 'เข้าสู่ระบบ'}
             </button>

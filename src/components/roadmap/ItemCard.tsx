@@ -97,7 +97,7 @@ export const ItemCard = memo(function ItemCard({ item }: ItemCardProps) {
         </span>
 
         {/* Owner */}
-        <span className="px-2 py-1 rounded text-xs font-thai bg-purple-500/20 text-purple-400">
+        <span className="px-2 py-1 rounded text-xs font-thai bg-amber-500/20 text-amber-400">
           {ownerLabel}
         </span>
 
@@ -107,7 +107,7 @@ export const ItemCard = memo(function ItemCard({ item }: ItemCardProps) {
             e.stopPropagation();
             navigateToFocus(item.id);
           }}
-          className="ml-auto p-1 text-white/30 hover:text-cyan-400 transition-colors"
+          className="ml-auto p-1 text-white/30 hover:text-emerald-400 transition-colors"
           title="Focus view"
         >
           <Crosshair className="w-4 h-4" />
@@ -197,7 +197,7 @@ export const ItemCard = memo(function ItemCard({ item }: ItemCardProps) {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-2 py-1 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 rounded text-xs transition-colors border border-cyan-500/20"
+                className="inline-flex items-center gap-1 px-2 py-1 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 rounded text-xs transition-colors border border-emerald-500/20"
                 onClick={(e) => e.stopPropagation()}
               >
                 <Link2 className="w-3 h-3" />

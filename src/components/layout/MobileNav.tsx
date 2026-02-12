@@ -61,7 +61,7 @@ function MobileNav() {
               key={item.id}
               onClick={() => setActiveSection(item.id)}
               className={`flex flex-col items-center gap-0.5 px-2 py-1.5 rounded-lg transition-colors shrink-0 min-w-[3.5rem] ${
-                isActive ? 'text-cyan-400' : 'text-slate-400'
+                isActive ? 'text-emerald-400' : 'text-slate-400'
               }`}
               whileTap={{ scale: 0.95 }}
             >

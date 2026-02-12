@@ -342,10 +342,10 @@ describe('mapDeptFromDb', () => {
       key: 'dept-1',
       name_th: 'แผนกทดสอบ',
       name_en: 'Test Department',
-      color: 'cyan',
-      bg_class: 'bg-cyan-500',
-      text_class: 'text-cyan-400',
-      border_class: 'border-cyan-500',
+      color: 'emerald',
+      bg_class: 'bg-emerald-500',
+      text_class: 'text-emerald-400',
+      border_class: 'border-emerald-500',
       sort_order: 1,
       created_at: '2026-01-01T00:00:00Z',
     };
@@ -355,10 +355,10 @@ describe('mapDeptFromDb', () => {
     expect(result.key).toBe('dept-1');
     expect(result.nameTh).toBe('แผนกทดสอบ');
     expect(result.nameEn).toBe('Test Department');
-    expect(result.color).toBe('cyan');
-    expect(result.bgClass).toBe('bg-cyan-500');
-    expect(result.textClass).toBe('text-cyan-400');
-    expect(result.borderClass).toBe('border-cyan-500');
+    expect(result.color).toBe('emerald');
+    expect(result.bgClass).toBe('bg-emerald-500');
+    expect(result.textClass).toBe('text-emerald-400');
+    expect(result.borderClass).toBe('border-emerald-500');
   });
 });
 
@@ -368,10 +368,10 @@ describe('mapDeptToDb', () => {
       key: 'dept-1',
       nameTh: 'แผนกทดสอบ',
       nameEn: 'Test Department',
-      color: 'cyan',
-      bgClass: 'bg-cyan-500',
-      textClass: 'text-cyan-400',
-      borderClass: 'border-cyan-500',
+      color: 'emerald',
+      bgClass: 'bg-emerald-500',
+      textClass: 'text-emerald-400',
+      borderClass: 'border-emerald-500',
     };
 
     const result = mapDeptToDb(dept);
@@ -379,10 +379,10 @@ describe('mapDeptToDb', () => {
     expect(result.key).toBe('dept-1');
     expect(result.name_th).toBe('แผนกทดสอบ');
     expect(result.name_en).toBe('Test Department');
-    expect(result.color).toBe('cyan');
-    expect(result.bg_class).toBe('bg-cyan-500');
-    expect(result.text_class).toBe('text-cyan-400');
-    expect(result.border_class).toBe('border-cyan-500');
+    expect(result.color).toBe('emerald');
+    expect(result.bg_class).toBe('bg-emerald-500');
+    expect(result.text_class).toBe('text-emerald-400');
+    expect(result.border_class).toBe('border-emerald-500');
   });
 });
 

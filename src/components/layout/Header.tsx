@@ -36,7 +36,7 @@ function Header() {
           {/* Add Item */}
           <button
             onClick={() => setShowForm(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-400 rounded-lg transition-colors border border-cyan-500/50"
+            className="flex items-center gap-2 px-4 py-2 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-400 rounded-lg transition-colors border border-emerald-500/50"
           >
             <Plus className="w-4 h-4" />
             <span className="hidden sm:inline">เพิ่มรายการ</span>

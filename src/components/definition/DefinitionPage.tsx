@@ -57,7 +57,7 @@ export function DefinitionPage() {
         {/* Header */}
         <div className="mb-12 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <BookOpen className="w-10 h-10 text-cyan-400" />
+            <BookOpen className="w-10 h-10 text-emerald-400" />
             <h1 className="font-thai text-4xl md:text-5xl font-bold text-white">
               คู่มือคำศัพท์
             </h1>
@@ -77,7 +77,7 @@ export function DefinitionPage() {
           <motion.div variants={cardVariants}>
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 md:p-8">
               <div className="flex items-center gap-3 mb-6">
-                <Zap className="w-6 h-6 text-cyan-400" />
+                <Zap className="w-6 h-6 text-emerald-400" />
                 <h2 className="font-thai text-2xl font-bold text-white">
                   ระดับความสำคัญ (Priority Levels)
                 </h2>
@@ -175,7 +175,7 @@ export function DefinitionPage() {
           <motion.div variants={cardVariants}>
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 md:p-8">
               <div className="flex items-center gap-3 mb-6">
-                <TrendingUp className="w-6 h-6 text-cyan-400" />
+                <TrendingUp className="w-6 h-6 text-emerald-400" />
                 <h2 className="font-thai text-2xl font-bold text-white">
                   สถานะของงาน (Status)
                 </h2>
@@ -285,7 +285,7 @@ export function DefinitionPage() {
           <motion.div variants={cardVariants}>
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 md:p-8">
               <div className="flex items-center gap-3 mb-6">
-                <Building2 className="w-6 h-6 text-cyan-400" />
+                <Building2 className="w-6 h-6 text-emerald-400" />
                 <h2 className="font-thai text-2xl font-bold text-white">
                   แผนกต่างๆ (Departments)
                 </h2>
@@ -293,10 +293,10 @@ export function DefinitionPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {/* Clinical */}
-                <div className="bg-white/5 border border-cyan-500/30 rounded-lg p-5 hover:bg-white/10 transition-colors">
+                <div className="bg-white/5 border border-emerald-500/30 rounded-lg p-5 hover:bg-white/10 transition-colors">
                   <div className="flex items-center gap-3 mb-2">
-                    <Stethoscope className="w-5 h-5 text-cyan-400" />
-                    <span className="font-thai text-base font-bold text-cyan-300">
+                    <Stethoscope className="w-5 h-5 text-emerald-400" />
+                    <span className="font-thai text-base font-bold text-emerald-300">
                       การแพทย์/คลินิก
                     </span>
                   </div>
@@ -309,10 +309,10 @@ export function DefinitionPage() {
                 </div>
 
                 {/* Expansion */}
-                <div className="bg-white/5 border border-violet-500/30 rounded-lg p-5 hover:bg-white/10 transition-colors">
+                <div className="bg-white/5 border border-amber-500/30 rounded-lg p-5 hover:bg-white/10 transition-colors">
                   <div className="flex items-center gap-3 mb-2">
-                    <Building2 className="w-5 h-5 text-violet-400" />
-                    <span className="font-thai text-base font-bold text-violet-300">
+                    <Building2 className="w-5 h-5 text-amber-400" />
+                    <span className="font-thai text-base font-bold text-amber-300">
                       ขยายสาขา
                     </span>
                   </div>
@@ -395,7 +395,7 @@ export function DefinitionPage() {
           <motion.div variants={cardVariants}>
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 md:p-8">
               <div className="flex items-center gap-3 mb-6">
-                <UserCog className="w-6 h-6 text-cyan-400" />
+                <UserCog className="w-6 h-6 text-emerald-400" />
                 <h2 className="font-thai text-2xl font-bold text-white">
                   บทบาทผู้รับผิดชอบ (Owner Roles)
                 </h2>
@@ -403,10 +403,10 @@ export function DefinitionPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* CEO */}
-                <div className="bg-white/5 border border-purple-500/30 rounded-lg p-5 hover:bg-white/10 transition-colors">
+                <div className="bg-white/5 border border-amber-500/30 rounded-lg p-5 hover:bg-white/10 transition-colors">
                   <div className="flex items-center gap-3 mb-3">
-                    <Crown className="w-6 h-6 text-purple-400" />
-                    <span className="font-thai text-lg font-bold text-purple-300">
+                    <Crown className="w-6 h-6 text-amber-400" />
+                    <span className="font-thai text-lg font-bold text-amber-300">
                       CEO
                     </span>
                   </div>
@@ -429,10 +429,10 @@ export function DefinitionPage() {
                 </div>
 
                 {/* Shared */}
-                <div className="bg-white/5 border border-cyan-500/30 rounded-lg p-5 hover:bg-white/10 transition-colors">
+                <div className="bg-white/5 border border-emerald-500/30 rounded-lg p-5 hover:bg-white/10 transition-colors">
                   <div className="flex items-center gap-3 mb-3">
-                    <Users className="w-6 h-6 text-cyan-400" />
-                    <span className="font-thai text-lg font-bold text-cyan-300">
+                    <Users className="w-6 h-6 text-emerald-400" />
+                    <span className="font-thai text-lg font-bold text-emerald-300">
                       Shared (CEO + GM)
                     </span>
                   </div>

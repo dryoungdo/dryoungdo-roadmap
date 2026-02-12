@@ -35,7 +35,7 @@ export function GanttHeader() {
             key={month}
             className={`border-b border-l border-white/10 p-2 text-center ${
               isCurrentMonth
-                ? 'bg-cyan-500/10 border-b-cyan-500'
+                ? 'bg-emerald-500/10 border-b-emerald-500'
                 : index % 2 === 0
                 ? 'bg-white/5'
                 : 'bg-white/[0.02]'
@@ -43,7 +43,7 @@ export function GanttHeader() {
           >
             <span
               className={`text-sm font-thai ${
-                isCurrentMonth ? 'text-cyan-400 font-semibold' : 'text-white/70'
+                isCurrentMonth ? 'text-emerald-400 font-semibold' : 'text-white/70'
               }`}
             >
               {month}

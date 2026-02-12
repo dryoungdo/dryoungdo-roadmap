@@ -118,8 +118,8 @@ function OverviewPage() {
       label: 'เริ่มเดือนนี้',
       value: metrics.itemsThisMonth,
       icon: Calendar,
-      color: 'text-cyan-400',
-      bgGradient: 'from-cyan-500/20 to-cyan-600/10',
+      color: 'text-emerald-400',
+      bgGradient: 'from-emerald-500/20 to-emerald-600/10',
       ariaLabel: `โครงการที่เริ่มในเดือนนี้ ${metrics.itemsThisMonth} โครงการ`,
     },
     {

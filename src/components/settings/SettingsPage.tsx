@@ -5,7 +5,7 @@ import { useRoadmapStore } from '../../store/useRoadmapStore';
 import { DebugPanel } from '../shared/DebugPanel';
 
 const AVAILABLE_COLORS = [
-  { name: 'cyan', bg: 'bg-cyan-500', text: 'text-cyan-400', border: 'border-cyan-500' },
+  { name: 'cyan', bg: 'bg-emerald-500', text: 'text-emerald-400', border: 'border-emerald-500' },
   { name: 'violet', bg: 'bg-violet-500', text: 'text-violet-400', border: 'border-violet-500' },
   { name: 'amber', bg: 'bg-amber-500', text: 'text-amber-400', border: 'border-amber-500' },
   { name: 'pink', bg: 'bg-pink-500', text: 'text-pink-400', border: 'border-pink-500' },
@@ -19,7 +19,7 @@ const AVAILABLE_COLORS = [
   { name: 'lime', bg: 'bg-lime-500', text: 'text-lime-400', border: 'border-lime-500' },
 ];
 
-const INPUT_CLASS = 'px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai text-sm';
+const INPUT_CLASS = 'px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai text-sm';
 
 export function SettingsPage() {
   const { departments, owners, addDepartment, updateDepartment, removeDepartment, addOwner, updateOwner, removeOwner } = useRoadmapStore();
@@ -128,7 +128,7 @@ export function SettingsPage() {
         {/* ===== Departments Section ===== */}
         <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
           <div className="flex items-center gap-3 mb-6">
-            <Building2 className="w-5 h-5 text-cyan-400" />
+            <Building2 className="w-5 h-5 text-emerald-400" />
             <h3 className="text-lg font-semibold text-white font-thai">แผนก</h3>
             <span className="text-white/40 text-sm">({departments.length})</span>
           </div>
@@ -201,7 +201,7 @@ export function SettingsPage() {
                     <div className="flex items-center gap-1">
                       <button
                         onClick={() => startEditDept(dept.key)}
-                        className="p-2 text-white/40 hover:text-cyan-400 transition-colors"
+                        className="p-2 text-white/40 hover:text-emerald-400 transition-colors"
                         title="แก้ไข"
                       >
                         <Pencil className="w-4 h-4" />
@@ -251,7 +251,7 @@ export function SettingsPage() {
                 <button
                   onClick={handleAddDepartment}
                   disabled={!newDeptNameTh.trim() || !newDeptNameEn.trim()}
-                  className="px-4 py-2 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-400 rounded-lg transition-colors border border-cyan-500/50 disabled:opacity-40 disabled:cursor-not-allowed"
+                  className="px-4 py-2 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-400 rounded-lg transition-colors border border-emerald-500/50 disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   <Plus className="w-5 h-5" />
                 </button>
@@ -263,7 +263,7 @@ export function SettingsPage() {
         {/* ===== Owners Section ===== */}
         <section className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
           <div className="flex items-center gap-3 mb-6">
-            <Users className="w-5 h-5 text-purple-400" />
+            <Users className="w-5 h-5 text-amber-400" />
             <h3 className="text-lg font-semibold text-white font-thai">เจ้าของโปรเจกต์</h3>
             <span className="text-white/40 text-sm">({owners.length})</span>
           </div>
@@ -316,8 +316,8 @@ export function SettingsPage() {
                   /* --- View mode --- */
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="w-3 h-3 rounded-full bg-purple-500" />
-                      <span className="font-thai font-medium text-purple-400">{owner.label}</span>
+                      <div className="w-3 h-3 rounded-full bg-amber-500" />
+                      <span className="font-thai font-medium text-amber-400">{owner.label}</span>
                       {owner.key !== owner.label && (
                         <span className="text-white/40 text-sm">({owner.key})</span>
                       )}
@@ -325,7 +325,7 @@ export function SettingsPage() {
                     <div className="flex items-center gap-1">
                       <button
                         onClick={() => startEditOwner(owner.key)}
-                        className="p-2 text-white/40 hover:text-purple-400 transition-colors"
+                        className="p-2 text-white/40 hover:text-amber-400 transition-colors"
                         title="แก้ไข"
                       >
                         <Pencil className="w-4 h-4" />
@@ -365,7 +365,7 @@ export function SettingsPage() {
               <button
                 onClick={handleAddOwner}
                 disabled={!newOwnerLabel.trim()}
-                className="px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 text-purple-400 rounded-lg transition-colors border border-purple-500/50 disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="px-4 py-2 bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 rounded-lg transition-colors border border-amber-500/50 disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 <Plus className="w-5 h-5" />
                 <span className="font-thai">เพิ่ม</span>

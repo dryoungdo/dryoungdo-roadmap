@@ -130,7 +130,7 @@ export const GanttBar = memo(function GanttBar({ item, departmentConfig }: Gantt
               e.stopPropagation();
               navigateToFocus(item.id);
             }}
-            className="flex items-center gap-1 text-cyan-400 hover:text-cyan-300 mt-1"
+            className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 mt-1"
           >
             <Crosshair className="w-3 h-3" />
             Focus View

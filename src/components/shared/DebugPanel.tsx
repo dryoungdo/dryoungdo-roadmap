@@ -38,8 +38,8 @@ export function DebugPanel() {
     setIsSeedingDepts(true);
     try {
       const defaultDepts = [
-        { key: 'clinical', nameTh: 'การแพทย์/คลินิก', nameEn: 'Clinical', color: 'cyan', bgClass: 'bg-cyan-500', textClass: 'text-cyan-400', borderClass: 'border-cyan-500' },
-        { key: 'marketing', nameTh: 'การตลาด', nameEn: 'Marketing', color: 'violet', bgClass: 'bg-violet-500', textClass: 'text-violet-400', borderClass: 'border-violet-500' },
+        { key: 'clinical', nameTh: 'การแพทย์/คลินิก', nameEn: 'Clinical', color: 'cyan', bgClass: 'bg-emerald-500', textClass: 'text-emerald-400', borderClass: 'border-emerald-500' },
+        { key: 'marketing', nameTh: 'การตลาด', nameEn: 'Marketing', color: 'violet', bgClass: 'bg-amber-500', textClass: 'text-amber-400', borderClass: 'border-amber-500' },
         { key: 'hr', nameTh: 'บุคคล/HR', nameEn: 'HR', color: 'amber', bgClass: 'bg-amber-500', textClass: 'text-amber-400', borderClass: 'border-amber-500' },
         { key: 'finance', nameTh: 'การเงิน', nameEn: 'Finance', color: 'pink', bgClass: 'bg-pink-500', textClass: 'text-pink-400', borderClass: 'border-pink-500' },
         { key: 'operations', nameTh: 'ปฏิบัติการ', nameEn: 'Operations', color: 'blue', bgClass: 'bg-blue-500', textClass: 'text-blue-400', borderClass: 'border-blue-500' },
@@ -215,7 +215,7 @@ export function DebugPanel() {
                     <button
                       onClick={seedDefaultDepartments}
                       disabled={isSeedingDepts}
-                      className="w-full px-4 py-3 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-400 rounded-lg transition-colors border border-cyan-500/50 text-sm font-thai disabled:opacity-40 disabled:cursor-not-allowed"
+                      className="w-full px-4 py-3 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-400 rounded-lg transition-colors border border-emerald-500/50 text-sm font-thai disabled:opacity-40 disabled:cursor-not-allowed"
                     >
                       {isSeedingDepts ? 'Seeding Departments...' : 'Seed Default Departments'}
                     </button>
@@ -224,7 +224,7 @@ export function DebugPanel() {
                     <button
                       onClick={seedDefaultOwners}
                       disabled={isSeedingOwners}
-                      className="w-full px-4 py-3 bg-purple-500/20 hover:bg-purple-500/30 text-purple-400 rounded-lg transition-colors border border-purple-500/50 text-sm font-thai disabled:opacity-40 disabled:cursor-not-allowed"
+                      className="w-full px-4 py-3 bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 rounded-lg transition-colors border border-amber-500/50 text-sm font-thai disabled:opacity-40 disabled:cursor-not-allowed"
                     >
                       {isSeedingOwners ? 'Seeding Owners...' : 'Seed Default Owners'}
                     </button>

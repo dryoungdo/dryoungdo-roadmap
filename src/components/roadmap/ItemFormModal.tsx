@@ -171,7 +171,7 @@ export function ItemFormModal() {
                 required
                 value={formData.title}
                 onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai"
+                className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai"
                 placeholder="เช่น เปิดสาขาใหม่ที่เชียงใหม่"
               />
             </div>
@@ -185,7 +185,7 @@ export function ItemFormModal() {
                 type="text"
                 value={formData.subtitle}
                 onChange={(e) => setFormData({ ...formData, subtitle: e.target.value })}
-                className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai"
+                className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai"
                 placeholder="รายละเอียดสั้นๆ"
               />
             </div>
@@ -200,7 +200,7 @@ export function ItemFormModal() {
                   onChange={(e) =>
                     setFormData({ ...formData, department: e.target.value as Department })
                   }
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai"
                   disabled={departments.length === 0}
                 >
                   {departments.length === 0 && <option value="">ไม่มีแผนก</option>}
@@ -253,7 +253,7 @@ export function ItemFormModal() {
                   onChange={(e) =>
                     setFormData({ ...formData, status: e.target.value as ItemStatus })
                   }
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai"
                 >
                   {STATUSES.map((status) => (
                     <option key={status.key} value={status.key}>
@@ -306,7 +306,7 @@ export function ItemFormModal() {
                       endDate: prev.endDate && prev.endDate < newStart ? newStart : prev.endDate,
                     }));
                   }}
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
                 />
               </div>
 
@@ -318,7 +318,7 @@ export function ItemFormModal() {
                   min={formData.startDate || undefined}
                   value={formData.endDate}
                   onChange={(e) => setFormData({ ...formData, endDate: e.target.value })}
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
+                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
                 />
               </div>
             </div>
@@ -348,7 +348,7 @@ export function ItemFormModal() {
                   onChange={(e) =>
                     setFormData({ ...formData, progress: parseInt(e.target.value) })
                   }
-                  className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-cyan-500"
+                  className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-emerald-500"
                 />
               </div>
             )}
@@ -415,14 +415,14 @@ export function ItemFormModal() {
                   type="text"
                   id="milestone-title"
                   placeholder="ชื่อเป้าหมายย่อย"
-                  className="flex-1 px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai text-sm"
+                  className="flex-1 px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai text-sm"
                 />
                 <input
                   type="date"
                   id="milestone-date"
                   min={formData.startDate || undefined}
                   max={formData.endDate || undefined}
-                  className="px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50 text-sm"
+                  className="px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/50 text-sm"
                 />
                 <button
                   type="button"
@@ -446,7 +446,7 @@ export function ItemFormModal() {
                       dateInput.value = '';
                     }
                   }}
-                  className="px-3 py-2 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-400 rounded-lg transition-colors border border-cyan-500/50"
+                  className="px-3 py-2 bg-emerald-500/20 hover:bg-emerald-500/30 text-cyan-400 rounded-lg transition-colors border border-emerald-500/50"
                 >
                   <Plus className="w-4 h-4" />
                 </button>
@@ -492,13 +492,13 @@ export function ItemFormModal() {
                   type="text"
                   id="link-title"
                   placeholder="ชื่อลิงก์"
-                  className="flex-1 px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai text-sm"
+                  className="flex-1 px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai text-sm"
                 />
                 <input
                   type="url"
                   id="link-url"
                   placeholder="URL"
-                  className="flex-1 px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 text-sm"
+                  className="flex-1 px-3 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 text-sm"
                 />
                 <button
                   type="button"
@@ -517,7 +517,7 @@ export function ItemFormModal() {
                       urlInput.value = '';
                     }
                   }}
-                  className="px-3 py-2 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-400 rounded-lg transition-colors border border-cyan-500/50"
+                  className="px-3 py-2 bg-emerald-500/20 hover:bg-emerald-500/30 text-cyan-400 rounded-lg transition-colors border border-emerald-500/50"
                 >
                   <Plus className="w-4 h-4" />
                 </button>
@@ -531,7 +531,7 @@ export function ItemFormModal() {
                 value={formData.notes}
                 onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                 rows={3}
-                className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai resize-none"
+                className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai resize-none"
                 placeholder="บันทึกเพิ่มเติม..."
               />
             </div>
@@ -544,7 +544,7 @@ export function ItemFormModal() {
                 className={`flex-1 px-6 py-3 rounded-lg font-semibold font-thai transition-colors ${
                   hasEmptyConfig
                     ? 'bg-white/5 text-white/40 cursor-not-allowed'
-                    : 'bg-cyan-500 hover:bg-cyan-600 text-white'
+                    : 'bg-emerald-500 hover:bg-cyan-600 text-white'
                 }`}
               >
                 บันทึก
@@ -560,7 +560,7 @@ export function ItemFormModal() {
                 <button
                   type="button"
                   onClick={handleDuplicate}
-                  className="px-6 py-3 bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/50 text-cyan-400 rounded-lg font-semibold font-thai transition-colors flex items-center gap-2"
+                  className="px-6 py-3 bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/50 text-cyan-400 rounded-lg font-semibold font-thai transition-colors flex items-center gap-2"
                 >
                   <Copy className="w-4 h-4" />
                   Copy

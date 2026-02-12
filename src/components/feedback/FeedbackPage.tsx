@@ -20,7 +20,7 @@ const PRIORITY_OPTIONS = [
 
 const STATUS_CONFIG: Record<string, { label: string; color: string; icon: typeof Clock }> = {
   new: { label: 'ใหม่', color: 'text-blue-400 bg-blue-500/20', icon: Clock },
-  acknowledged: { label: 'รับทราบ', color: 'text-cyan-400 bg-cyan-500/20', icon: CheckCircle2 },
+  acknowledged: { label: 'รับทราบ', color: 'text-emerald-400 bg-emerald-500/20', icon: CheckCircle2 },
   in_progress: { label: 'กำลังดำเนินการ', color: 'text-yellow-400 bg-yellow-500/20', icon: AlertCircle },
   resolved: { label: 'แก้ไขแล้ว', color: 'text-green-400 bg-green-500/20', icon: CheckCircle2 },
   wont_fix: { label: 'ไม่ดำเนินการ', color: 'text-gray-400 bg-gray-500/20', icon: AlertCircle },
@@ -82,7 +82,7 @@ export function FeedbackPage() {
         </div>
         <button
           onClick={() => setShowForm(!showForm)}
-          className="flex items-center gap-2 px-4 py-2 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-400 rounded-lg transition-colors border border-cyan-500/50"
+          className="flex items-center gap-2 px-4 py-2 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-400 rounded-lg transition-colors border border-emerald-500/50"
         >
           <MessageSquarePlus className="w-4 h-4" />
           <span className="hidden sm:inline font-thai">เพิ่มข้อเสนอแนะ</span>
@@ -106,7 +106,7 @@ export function FeedbackPage() {
                   required
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai"
                   placeholder="สรุปสั้นๆ ว่าต้องการอะไร"
                 />
               </div>
@@ -123,7 +123,7 @@ export function FeedbackPage() {
                         onClick={() => setCategory(cat.key)}
                         className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-thai transition-colors border ${
                           category === cat.key
-                            ? 'bg-cyan-500/20 text-cyan-400 border-cyan-500/50'
+                            ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/50'
                             : 'bg-white/5 text-white/60 border-white/10 hover:bg-white/10'
                         }`}
                       >
@@ -162,7 +162,7 @@ export function FeedbackPage() {
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   rows={4}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai resize-none"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai resize-none"
                   placeholder="อธิบายรายละเอียดเพิ่มเติม..."
                 />
               </div>
@@ -178,7 +178,7 @@ export function FeedbackPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex items-center gap-2 px-6 py-2 bg-cyan-500 hover:bg-cyan-600 disabled:bg-cyan-500/50 text-white rounded-lg font-semibold font-thai transition-colors"
+                  className="flex items-center gap-2 px-6 py-2 bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-500/50 text-white rounded-lg font-semibold font-thai transition-colors"
                 >
                   <Send className="w-4 h-4" />
                   {isSubmitting ? 'กำลังส่ง...' : 'ส่งข้อเสนอแนะ'}
@@ -244,7 +244,7 @@ export function FeedbackPage() {
                       {item.status === 'new' && (
                         <button
                           onClick={() => updateFeedbackStatus(item.id, 'acknowledged')}
-                          className="text-xs px-2 py-1 bg-cyan-500/20 text-cyan-400 rounded hover:bg-cyan-500/30 font-thai transition-colors"
+                          className="text-xs px-2 py-1 bg-emerald-500/20 text-emerald-400 rounded hover:bg-emerald-500/30 font-thai transition-colors"
                         >
                           รับทราบ
                         </button>

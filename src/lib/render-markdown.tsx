@@ -14,7 +14,7 @@ function processInlineFormatting(line: string): ReactNode[] {
         );
       }
       parts.push(
-        <span key={`bold-${partKey++}`} className="text-cyan-400 font-semibold">
+        <span key={`bold-${partKey++}`} className="text-emerald-400 font-semibold">
           {boldMatch[1]}
         </span>
       );

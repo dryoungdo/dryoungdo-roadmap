@@ -65,7 +65,7 @@ export default function GoalsPage() {
             >
               {/* Icon + Title */}
               <div className="flex items-center gap-3 mb-4">
-                <Icon className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                <Icon className="w-5 h-5 text-emerald-400 flex-shrink-0" />
                 <div className="min-w-0">
                   <h3 className="text-sm font-semibold text-white font-thai truncate">
                     {goal.title}
@@ -74,7 +74,7 @@ export default function GoalsPage() {
               </div>
 
               {/* Target */}
-              <div className="text-3xl font-bold text-cyan-400 mb-3">
+              <div className="text-3xl font-bold text-emerald-400 mb-3">
                 {goal.target}
               </div>
 
@@ -82,7 +82,7 @@ export default function GoalsPage() {
               {goal.relatedMetric && (
                 <div className="flex items-center gap-2 mb-3 text-sm">
                   <span className="text-white/50 font-thai">{goal.relatedMetric.name}:</span>
-                  <span className="text-purple-400 font-semibold">{goal.relatedMetric.target}</span>
+                  <span className="text-amber-400 font-semibold">{goal.relatedMetric.target}</span>
                 </div>
               )}
 

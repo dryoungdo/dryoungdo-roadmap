@@ -54,7 +54,7 @@ export function FilterBar() {
               value={filters.search}
               onChange={(e) => setFilters({ search: e.target.value })}
               placeholder="ค้นหารายการ..."
-              className="w-full pl-10 pr-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 font-thai"
+              className="w-full pl-10 pr-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 font-thai"
             />
           </div>
 
@@ -64,7 +64,7 @@ export function FilterBar() {
               onClick={() => setViewMode('gantt')}
               className={`p-2 rounded ${
                 viewMode === 'gantt'
-                  ? 'bg-cyan-500/20 text-cyan-400'
+                  ? 'bg-emerald-500/20 text-emerald-400'
                   : 'text-white/60 hover:text-white/80'
               } transition-colors`}
             >
@@ -74,7 +74,7 @@ export function FilterBar() {
               onClick={() => setViewMode('list')}
               className={`p-2 rounded ${
                 viewMode === 'list'
-                  ? 'bg-cyan-500/20 text-cyan-400'
+                  ? 'bg-emerald-500/20 text-emerald-400'
                   : 'text-white/60 hover:text-white/80'
               } transition-colors`}
             >
@@ -153,7 +153,7 @@ export function FilterBar() {
                   whileTap={{ scale: 0.95 }}
                   className={`px-3 py-1 rounded-full text-xs font-thai transition-all ${
                     isActive
-                      ? 'bg-purple-500/20 text-purple-400 border border-purple-500/50'
+                      ? 'bg-amber-500/20 text-amber-400 border border-amber-500/50'
                       : 'bg-white/5 text-white/60 border border-white/10 hover:bg-white/10'
                   }`}
                 >
@@ -178,7 +178,7 @@ export function FilterBar() {
                   whileTap={{ scale: 0.95 }}
                   className={`px-3 py-1 rounded-full text-xs font-thai transition-all ${
                     isActive
-                      ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/50'
+                      ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/50'
                       : 'bg-white/5 text-white/60 border border-white/10 hover:bg-white/10'
                   }`}
                 >

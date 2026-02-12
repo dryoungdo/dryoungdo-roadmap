@@ -29,7 +29,7 @@ function Badge({ variant, value }: BadgeProps) {
   if (variant === 'status') {
     const statusMap: Record<ItemStatus, { color: string; label: string; showCheck?: boolean }> = {
       planned: { color: 'bg-slate-500/20 text-slate-400 border-slate-500/50', label: 'วางแผน' },
-      in_progress: { color: 'bg-cyan-500/20 text-cyan-400 border-cyan-500/50', label: 'กำลังดำเนินการ' },
+      in_progress: { color: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/50', label: 'กำลังดำเนินการ' },
       on_track: { color: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/50', label: 'ตามแผน' },
       at_risk: { color: 'bg-amber-500/20 text-amber-400 border-amber-500/50', label: 'เสี่ยงล่าช้า' },
       blocked: { color: 'bg-red-500/20 text-red-400 border-red-500/50', label: 'ติดขัด' },
@@ -51,7 +51,7 @@ function Badge({ variant, value }: BadgeProps) {
     if (!owner) return null;
 
     return (
-      <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border bg-purple-500/20 text-purple-400 border-purple-500/50`}>
+      <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border bg-amber-500/20 text-amber-400 border-amber-500/50`}>
         {owner.label}
       </span>
     );
